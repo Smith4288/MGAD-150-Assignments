@@ -1,0 +1,18 @@
+// This is my snow fall i went with many colorful dots then with white dots that are close up. 
+// I went with the rainbow dot effect to show you the color when if the sun is out and shinning on the snow.
+// The close up dots are the ones when you're looking at the snow and kind of wanted to make a blizzard effect to the soft rainbow.
+// Finally I went with the different look becasue I went with soft to heavy snow fall.
+
+boolean oState = false;
+
+void setup() {
+  surface.setResizable(true);
+  surface.setTitle("Functions");
+  pixelDensity(displayDensity());
+  size(450, 450);
+  background(60);
+}
+
+
+  
+  

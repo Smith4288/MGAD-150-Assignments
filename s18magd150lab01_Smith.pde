@@ -1,0 +1,36 @@
+size(128, 128);
+background(255);
+rectMode(CENTER);
+stroke(0);
+fill(100);
+rect(80, 80, 40, 90);
+
+rectMode(CENTER);
+noStroke();
+fill(120);
+rect(48, 85, 20, 80);
+
+stroke(0);
+line(80, 10, 80, 36);
+
+ellipseMode(CENTER);
+ellipse(80, 9, 5, 5);
+
+stroke(0);
+line(48, 18, 48, 45);
+
+ellipseMode(CENTER);
+ellipse(48, 16, 3, 3);
+
+stroke(0);
+point(80, 8);
+
+rectMode(CENTER);
+noStroke();
+fill(200);
+rect(118, 80, 42, 92);
+
+rectMode(CENTER);
+stroke(0);
+fill(170);
+rect(20, 80, 30, 88);

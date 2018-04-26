@@ -1,0 +1,48 @@
+Ball b;
+PVector position;
+PVector velocity;
+float meta = 0;
+// My carnival set up was for a target game with a little confusion of spiral going in a circle.
+// The ball that is bouncing up and down is if you hit the ball while in the target you get the mega prize.
+// I also tried adding another spiral but it wouldnt look good with the other one up there.
+// For the spiral I used pushMatrix also with a loop so it can stay and be placed in one postion.
+
+
+void setup() {
+  size(400, 400);
+  position = new PVector(200, 200);
+  velocity = new PVector(1.5, 3);
+  b = new Ball();
+
+}
+
+void draw() {
+  background(80);
+stroke(180);
+fill(20, 10);
+ellipse(200, 200, 100, 100);
+stroke(200);
+fill(45, 15);
+ellipse(200, 200, 180, 180);
+rect(0, 0, width, height);
+stroke(200);
+fill(50, 20);
+ellipse(200, 200, 260, 260);
+b.update();
+b.display();
+position.add(velocity);
+
+translate(width/4, height/4);
+
+for (float s = 0; s < PI; s += 0.1) {
+  pushMatrix();
+  rotate(meta + s);
+  line(15, 15, 145, 0);
+  
+  popMatrix();
+}
+
+meta += 0.02;
+
+
+}
